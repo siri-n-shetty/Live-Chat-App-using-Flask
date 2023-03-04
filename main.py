@@ -1,9 +1,3 @@
-"""
-Flask is a lightweight framework used in Python to generate websites.
-We are implementing the sockets in flask backend,
-and the frontend code will be written in HTML and JavaScript.
-"""
-
 from flask import Flask, render_template, request, session, redirect, url_for
 from flask_socketio import join_room, leave_room, SocketIO, send
 import random
@@ -138,9 +132,3 @@ def disconnect():
 # Running the application
 if __name__ == "__main__":
     socketio.run(app, debug=True)
-
-"""
-This flask application is running on http://127.0.0.1:5000
-which is LocalHost Port 5000 where we create routes
-Whatever information appears in the terminal is basically the server logs (or just logs)
-"""
